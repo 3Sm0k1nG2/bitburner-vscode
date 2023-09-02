@@ -1,3 +1,7 @@
+## [1.3.3](https://marketplace.visualstudio.com/items?itemName=bitburner.bitburner-vscode-integration&ssr=false#version-history) (2022-01-03)
+
+Undocumented
+
 ## [1.3.2](https://github.com/hexnaught/vscode-bitburner-connector/compare/v1.3.1...v1.3.2) (2022-01-02)
 
 
