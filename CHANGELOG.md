@@ -1,6 +1,17 @@
+## [1.3.4](https://github.com/3Sm0k1nG2/bitburner-vscode/compare/v1.3.3...v1.3.4) (2023-09-02)
+
+### Changed
+
+* Update extension to use new feature ([a326e4d](https://github.com/3Sm0k1nG2/bitburner-vscode/commit/a326e4d71ac4d049b3352b188edb23cbc7d471fa))
+
+### Added
+
+* **comment-out-first-imports:** allows upload of files containing imports of types (in vscode) to be commented out in the game ([a295fcd](https://github.com/3Sm0k1nG2/bitburner-vscode/commit/a295fcdd68fa7d0f7217808cd5fdb5455c033063))
+
 ## [1.3.3](https://marketplace.visualstudio.com/items?itemName=bitburner.bitburner-vscode-integration&ssr=false#version-history) (2022-01-03)
 
 Undocumented
+
 
 ## [1.3.2](https://github.com/hexnaught/vscode-bitburner-connector/compare/v1.3.1...v1.3.2) (2022-01-02)
 
