@@ -4,6 +4,7 @@ const vscode = require(`vscode`);
 const fs = require(`fs`);
 const http = require(`http`);
 const { getFilesRecursively } = require(`./utils/fs`);
+const { commentOutFirstImports } = require(`./custom/commentOutFirstImports`);
 
 // TODO: Move to extension config? Does this _need_ to be configurable?
 const BB_GAME_CONFIG = {
@@ -118,7 +119,7 @@ function activate(context) {
         doPostRequestToBBGame({
           action: `UPSERT`,
           filename: filename,
-          code: contents,
+          code: commentOutFirstImports(contents),
         });
       });
     }),
@@ -149,7 +150,7 @@ function activate(context) {
           doPostRequestToBBGame({
             action: `UPSERT`,
             filename: filename,
-            code: contents,
+            code: commentOutFirstImports(contents),
           });
         }
       });
@@ -188,7 +189,7 @@ const initFileWatcher = (rootDir = `./`) => {
     doPostRequestToBBGame({
       action: `UPDATE`,
       filename: filename,
-      code: contents,
+      code: commentOutFirstImports(contents),
     });
   });
 
@@ -199,7 +200,7 @@ const initFileWatcher = (rootDir = `./`) => {
     doPostRequestToBBGame({
       action: `CREATE`,
       filename: filename,
-      code: contents,
+      code: commentOutFirstImports(contents),
     });
   });
 
